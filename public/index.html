@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50 font-sans">
+
+    <header class="fixed top-0 left-0 w-full bg-white border-b border-neutral-200 z-50 h-20">
+
+        <div class="max-w-7xl mx-auto flex items-stretch justify-between h-full px-6">
+
+            <a href="/" class="flex items-center gap-3">
+                <img src="../IMG/icons8-rede-descentralizada-50.png" class="h-9 w-auto">
+                <span class="text-lg font-semibold tracking-tight">
+                    NOME
+                </span>
+            </a>
+
+            <nav class="hidden lg:flex items-stretch text-xs tracking-widest uppercase text-black">
+
+
+
+                <a href="#servicos"
+                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
+
+                    <span
+                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
+
+                    <span class="relative z-10">Serviços</span>
+
+                </a>
+                <a href="#sobre"
+                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
+
+                    <span
+                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
+
+                    <span class="relative z-10">Sobre nós</span>
+
+                </a>
+                <a href="#clientes"
+                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
+
+                    <span
+                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
+
+                    <span class="relative z-10">Clientes</span>
+
+                </a>
+                <a href="#downloads"
+                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
+
+                    <span
+                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
+
+                    <span class="relative z-10">Downloads</span>
+
+                </a>
+                <a href="#certificacoes"
+                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
+
+                    <span
+                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
+
+                    <span class="relative z-10">Certificações</span>
+
+                </a>
+                <a href="#contato"
+                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
+
+                    <span
+                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
+
+                    <span class="relative z-10">Contato</span>
+
+                </a>
+              
+               
+
+            </nav>
+
+            <div class="lg:hidden flex items-center">
+                <button id="menu-btn"
+                    class="w-10 h-10 border border-neutral-200 rounded-md flex items-center justify-center">
+                    ☰
+                </button>
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="h-20"></div>
+
+    <script>
+        const btn = document.getElementById("menu-btn");
+        const menu = document.getElementById("mobile-menu");
+
+        if (btn && menu) {
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        }
+    </script>
+
+</body>
+
+</html>
