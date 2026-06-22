@@ -4,116 +4,271 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Empresa</title>
+    <title>Atlas Web</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
 
-<body class="bg-gray-50 font-sans">
-    <header class="fixed top-0 left-0 w-full bg-white border-b border-neutral-200 z-50 h-20">
+<body class="bg-[#030303] text-white antialiased selection:bg-[#E12E3C] selection:text-white">
 
-        <div class="max-w-7xl mx-auto flex items-stretch justify-between h-full px-6">
+    <header class="fixed top-0 left-0 w-full bg-[#030303]/80 backdrop-blur-md border-b border-neutral-900 z-50 h-24">
+        <div class="max-w-[1400px] mx-auto flex items-center justify-between h-full px-8">
 
-            <!-- ================= LOGO ================= -->
-            <a href="/" class="flex items-center gap-3">
-                <img src="../IMG/icons8-rede-descentralizada-50.png" class="h-9 w-auto">
-                <span class="text-lg font-semibold tracking-tight">
-                    NOME
+            <a href="/" class="flex items-center gap-3 group">
+                <!-- <svg class="h-6 w-auto text-[#E12E3C]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5" />
+                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                    <path d="M2 17l10 5 10-5" />
+                    <path d="M2 12l10 5 10-5" />
+                </svg> -->
+                <span class="text-xl font-black tracking-tight text-white flex items-center">
+                    Atlas
                 </span>
             </a>
 
-            <!-- ================= NAVBAR DESKTOP ================= -->
-            <nav class="hidden lg:flex items-stretch text-xs tracking-widest uppercase text-black">
-
-                <!-- Cursos -->
-                <a href="#cursos"
-                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
-                    <span
-                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-                    <span class="relative z-10">Cursos</span>
-                </a>
-
-                <!-- Sobre -->
-                <a href="#sobre"
-                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
-                    <span
-                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-                    <span class="relative z-10">Sobre nós</span>
-                </a>
-
-                <!-- Alunos -->
-                <a href="#alunos"
-                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
-                    <span
-                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-                    <span class="relative z-10">Alunos</span>
-                </a>
-
-                <!-- Projetos -->
-                <a href="#projetos"
-                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
-                    <span
-                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-                    <span class="relative z-10">Projetos</span>
-                </a>
-
-                <!-- Estatísticas -->
-                <a href="#estatisticas"
-                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
-                    <span
-                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-                    <span class="relative z-10">Estatísticas</span>
-                </a>
-
-                <!-- Contato -->
-                <a href="#contato"
-                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
-                    <span
-                        class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-                    <span class="relative z-10">Contato</span>
-                </a>
-
+            <nav class="hidden lg:flex items-center gap-10 text-[15px] font-medium text-neutral-400">
+                <a href="#cursos" class="hover:text-white transition-colors">Cursos</a>
+                <a href="#sobre" class="hover:text-white transition-colors">Sobre nós</a>
+                <a href="#alunos" class="hover:text-white transition-colors">Alunos</a>
+                <a href="#projetos" class="hover:text-white transition-colors">Projetos</a>
+                <a href="#estatisticas" class="hover:text-white transition-colors">Estatísticas</a>
+                <a href="#contato" class="hover:text-white transition-colors">Contato</a>
             </nav>
 
-            <!-- ================= BOTÃO MOBILE ================= -->
+            <div class="hidden lg:flex items-center">
+                <a href="#comecar"
+                    class="px-6 py-3 bg-[#E12E3C] hover:bg-[#c62431] text-white text-sm font-bold rounded-xl transition-all duration-200">
+                    Começar agora
+                </a>
+            </div>
+
             <div class="lg:hidden flex items-center">
                 <button id="menu-btn"
-                    class="w-10 h-10 border border-neutral-200 rounded-md flex items-center justify-center"
+                    class="w-10 h-10 border border-neutral-800 rounded-xl flex items-center justify-center text-neutral-400 hover:text-white transition"
                     aria-label="Abrir menu">
                     ☰
                 </button>
             </div>
-
         </div>
 
-        <!-- ================= MENU MOBILE ================= -->
         <div id="mobile-menu"
-            class="hidden lg:hidden flex flex-col bg-white border-t border-neutral-200 px-6 py-4 space-y-4">
-
-            <a href="#cursos" class="text-black font-medium">Cursos</a>
-            <a href="#sobre" class="text-black font-medium">Sobre nós</a>
-            <a href="#alunos" class="text-black font-medium">Alunos</a>
-            <a href="#projetos" class="text-black font-medium">Projetos</a>
-            <a href="#estatisticas" class="text-black font-medium">Estatísticas</a>
-            <a href="#contato" class="text-black font-medium">Contato</a>
-
+            class="hidden lg:hidden flex flex-col bg-[#030303] border-t border-neutral-900 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#cursos" class="text-neutral-400 hover:text-white font-medium transition">Cursos</a>
+            <a href="#sobre" class="text-neutral-400 hover:text-white font-medium transition">Sobre nós</a>
+            <a href="#alunos" class="text-neutral-400 hover:text-white font-medium transition">Alunos</a>
+            <a href="#projetos" class="text-neutral-400 hover:text-white font-medium transition">Projetos</a>
+            <a href="#estatisticas" class="text-neutral-400 hover:text-white font-medium transition">Estatísticas</a>
+            <a href="#contato" class="text-neutral-400 hover:text-white font-medium transition">Contato</a>
+            <a href="#comecar" class="pt-2 text-[#E12E3C] font-semibold">Começar agora →</a>
         </div>
-
     </header>
 
-    <!-- ================= SCRIPT MENU MOBILE ================= -->
-    <script>
-        const btn = document.getElementById('menu-btn');
-        const menu = document.getElementById('mobile-menu');
+            <script>
+                const btn = document.getElementById('menu-btn');
+                const menu = document.getElementById('mobile-menu');
+        
+                btn.addEventListener('click', () => {
+                    menu.classList.toggle('hidden');
+                });
+            </script>
 
-        // Alterna visibilidade do menu mobile
-        btn.addEventListener('click', () => {
-            menu.classList.toggle('hidden');
-        });
-    </script>
+    <section id="inicio" class="relative min-h-screen flex flex-col justify-center pt-28 pb-12 px-8 overflow-hidden">
+
+        <div
+            class="absolute top-1/4 right-[-10%] w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[140px] pointer-events-none z-0">
+        </div>
+
+        <div class="max-w-[1400px] mx-auto w-full flex flex-col justify-between flex-1 z-10">
+
+            <div class="grid lg:grid-cols-12 gap-8 items-center my-auto w-full">
+
+                <div class="lg:col-span-7 flex flex-col items-start">
+
+                    <span
+                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-red-950/40 border border-red-900/40 text-[11px] font-bold tracking-widest text-[#E12E3C] uppercase mb-6 animate-pulse">
+                        Aprenda. Pratique. Evolua.
+                    </span>
+
+                    <h1
+                        class="text-5xl sm:text-6xl font-normal lg:text-md  font-black tracking-tight leading-[1.05] text-white">
+                        Transforme código em <br><span class="text-[#E12E3C]">oportunidades.</span>
+                    </h1>
+
+                    <p class="mt-6 text-lg text-neutral-400 max-w-xl leading-relaxed font-normal">
+                        Cursos de programação completos, projetos práticos e uma comunidade que te impulsiona do zero ao
+                        mercado.
+                    </p>
+
+                    <div class="mt-10 flex flex-wrap items-center gap-4 w-full sm:w-auto">
+                        <a href="#cursos"
+                            class="flex items-center justify-center gap-2 px-7 py-4 bg-[#E12E3C] hover:bg-[#c62431] text-white rounded-xl font-bold transition-all w-full sm:w-auto text-center text-base shadow-lg shadow-red-600/10">
+                            Ver cursos
+                            <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3">
+                                </path>
+                            </svg>
+                        </a>
+
+                        <a href="#funcionamento"
+                            class="flex items-center justify-center gap-3 px-7 py-4 bg-[#0a0a0c] hover:bg-[#111115] border border-neutral-800/60 rounded-xl font-bold text-white transition w-full sm:w-auto text-center text-base">
+                            Como funciona
+                            <span class="text-[10px] text-neutral-400">▶</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- <div class="lg:col-span-5 flex justify-center lg:justify-end w-full mt-10 lg:mt-0">
+                    <div class="relative w-full max-w-[680px] lg:max-w-none flex items-center justify-center">
+                        <img src="img/ChatGPT Image 22 de jun. de 2026, 18_38_57.png"
+                            class="w-full h-auto object-contain relative z-10 drop-shadow-[0_35px_50px_rgba(0,0,0,0.9)] scale-105 lg:scale-110"
+                            alt="Plataforma Atlas Web">
+                    </div>
+                </div> -->
+
+            </div>
+
+            <div class="w-full border-t border-neutral-900/60 pt-8 mt-auto flex items-center gap-4">
+                <div class="flex -space-x-2.5 overflow-hidden">
+                    <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#030303] object-cover"
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
+                        alt="Aluno">
+                    <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#030303] object-cover"
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
+                        alt="Aluno">
+                        <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#030303] object-cover"
+                        src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=100&q=80"
+                        alt="Aluno">
+                    <div
+                        class="flex items-center justify-center h-9 w-9 rounded-full bg-[#E12E3C] ring-2 ring-[#030303] text-[11px] font-bold text-white">
+                        +1k
+                    </div>
+                </div>
+                <p class="text-sm text-neutral-400 font-medium tracking-wide">
+                    alunos já estão evoluindo com a gente
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section id="cursos" class="bg-[#030303] pt-20 pb-20 px-6 lg:px-8 border-t border-neutral-900/60">
+        <div class="max-w-[1400px] mx-auto">
+
+            <div class="text-center flex flex-col items-center mb-12">
+                <span class="text-[10px] font-bold tracking-widest text-[#E12E3C] uppercase mb-2">
+                    Cursos
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-black tracking-tight text-white mb-3">
+                    Do básico ao avançado
+                </h2>
+                <p class="text-sm text-neutral-400 max-w-xl font-normal">
+                    Trilhas completas para você aprender, praticar e construir projetos reais.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+
+                <div
+                    class="bg-[#09090b]/40 border border-neutral-900 rounded-xl p-5 flex flex-col items-start hover:border-neutral-800 transition-all group min-h-[220px]">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-[#141417] border border-neutral-800/80 flex items-center justify-center text-[#E12E3C] text-base font-bold mb-4">
+                        &lt;/&gt;
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-1.5">HTML & CSS</h3>
+                    <p class="text-[12px] text-neutral-400 leading-relaxed mb-4">
+                        Crie interfaces modernas e responsivas do zero.
+                    </p>
+                    <span class="text-[10px] font-bold text-[#E12E3C] tracking-wide mt-auto">Iniciante</span>
+                </div>
+
+                <div
+                    class="bg-[#09090b]/40 border border-neutral-900 rounded-xl p-5 flex flex-col items-start hover:border-neutral-800 transition-all group min-h-[220px]">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-[#141417] border border-neutral-800/80 flex items-center justify-center text-[#E12E3C] text-xs font-black mb-4">
+                        JS
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-1.5">JavaScript</h3>
+                    <p class="text-[12px] text-neutral-400 leading-relaxed mb-4">
+                        Domine a linguagem mais importante da web.
+                    </p>
+                    <span class="text-[10px] font-bold text-[#E12E3C] tracking-wide mt-auto">Intermediário</span>
+                </div>
+
+                <div
+                    class="bg-[#09090b]/40 border border-neutral-900 rounded-xl p-5 flex flex-col items-start hover:border-neutral-800 transition-all group min-h-[220px]">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-[#141417] border border-neutral-800/80 flex items-center justify-center text-[#E12E3C] text-lg mb-4">
+                        ⚛
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-1.5">React</h3>
+                    <p class="text-[12px] text-neutral-400 leading-relaxed mb-4">
+                        Construa interfaces dinâmicas e ultra rápidas.
+                    </p>
+                    <span class="text-[10px] font-bold text-[#E12E3C] tracking-wide mt-auto">Intermediário</span>
+                </div>
+
+                <div
+                    class="bg-[#09090b]/40 border border-neutral-900 rounded-xl p-5 flex flex-col items-start hover:border-neutral-800 transition-all group min-h-[220px]">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-[#141417] border border-neutral-800/80 flex items-center justify-center text-[#E12E3C] text-lg mb-4">
+                        🐍
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-1.5">Python</h3>
+                    <p class="text-[12px] text-neutral-400 leading-relaxed mb-4">
+                        Aprenda Python com foco total em projetos práticos.
+                    </p>
+                    <span class="text-[10px] font-bold text-[#E12E3C] tracking-wide mt-auto">Iniciante</span>
+                </div>
+
+                <div
+                    class="bg-[#09090b]/40 border border-neutral-900 rounded-xl p-5 flex flex-col items-start hover:border-neutral-800 transition-all group min-h-[220px]">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-[#141417] border border-neutral-800/80 flex items-center justify-center text-[#E12E3C] text-lg mb-4">
+                        🗄
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-1.5">Banco de Dados</h3>
+                    <p class="text-[12px] text-neutral-400 leading-relaxed mb-4">
+                        Entenda dados e crie aplicações completas.
+                    </p>
+                    <span class="text-[10px] font-bold text-[#E12E3C] tracking-wide mt-auto">Intermediário</span>
+                </div>
+
+                <div
+                    class="bg-[#09090b]/40 border border-neutral-900 rounded-xl p-5 flex flex-col items-start hover:border-neutral-800 transition-all group min-h-[220px]">
+                    <div
+                        class="w-10 h-10 rounded-lg bg-[#141417] border border-neutral-800/80 flex items-center justify-center text-[#E12E3C] text-base mb-4">
+                        🌿
+                    </div>
+                    <h3 class="text-base font-bold text-white mb-1.5">Git & GitHub</h3>
+                    <p class="text-[12px] text-neutral-400 leading-relaxed mb-4">
+                        Versione seu código e colabore como um profissional.
+                    </p>
+                    <span class="text-[10px] font-bold text-[#E12E3C] tracking-wide mt-auto">Iniciante</span>
+                </div>
+
+            </div>
+
+            <div class="mt-12 flex justify-center">
+                <a href="#todos-os-cursos"
+                    class="flex items-center justify-center gap-2 px-6 py-2.5 bg-transparent hover:bg-[#09090b] border border-neutral-800 rounded-full font-bold text-xs text-white transition duration-200">
+                    Ver todos os cursos
+                    <svg class="w-3.5 h-3.5 text-neutral-400 stroke-[2.5]" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
 
 </body>
 
