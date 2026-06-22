@@ -13,11 +13,11 @@
 </head>
 
 <body class="bg-gray-50 font-sans">
-
     <header class="fixed top-0 left-0 w-full bg-white border-b border-neutral-200 z-50 h-20">
 
         <div class="max-w-7xl mx-auto flex items-stretch justify-between h-full px-6">
 
+            <!-- ================= LOGO ================= -->
             <a href="/" class="flex items-center gap-3">
                 <img src="../IMG/icons8-rede-descentralizada-50.png" class="h-9 w-auto">
                 <span class="text-lg font-semibold tracking-tight">
@@ -25,91 +25,94 @@
                 </span>
             </a>
 
+            <!-- ================= NAVBAR DESKTOP ================= -->
             <nav class="hidden lg:flex items-stretch text-xs tracking-widest uppercase text-black">
 
-
-
-                <a href="#servicos"
+                <!-- Cursos -->
+                <a href="#cursos"
                     class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
-
                     <span
                         class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-
-                    <span class="relative z-10">Serviços</span>
-
+                    <span class="relative z-10">Cursos</span>
                 </a>
+
+                <!-- Sobre -->
                 <a href="#sobre"
                     class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
-
                     <span
                         class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-
                     <span class="relative z-10">Sobre nós</span>
-
                 </a>
-                <a href="#clientes"
-                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
 
+                <!-- Alunos -->
+                <a href="#alunos"
+                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
                     <span
                         class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-
-                    <span class="relative z-10">Clientes</span>
-
+                    <span class="relative z-10">Alunos</span>
                 </a>
-                <a href="#downloads"
-                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
 
+                <!-- Projetos -->
+                <a href="#projetos"
+                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
                     <span
                         class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-
-                    <span class="relative z-10">Downloads</span>
-
+                    <span class="relative z-10">Projetos</span>
                 </a>
-                <a href="#certificacoes"
-                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
 
+                <!-- Estatísticas -->
+                <a href="#estatisticas"
+                    class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
                     <span
                         class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-
-                    <span class="relative z-10">Certificações</span>
-
+                    <span class="relative z-10">Estatísticas</span>
                 </a>
+
+                <!-- Contato -->
                 <a href="#contato"
                     class="relative group flex items-center px-8 text-black font-medium transition-colors duration-300 hover:text-white">
-
                     <span
                         class="absolute inset-0 bg-[#FF2D55] scale-x-0 group-hover:scale-x-100 origin-center transition-transform duration-300 ease-out z-0"></span>
-
                     <span class="relative z-10">Contato</span>
-
                 </a>
-              
-               
 
             </nav>
 
+            <!-- ================= BOTÃO MOBILE ================= -->
             <div class="lg:hidden flex items-center">
                 <button id="menu-btn"
-                    class="w-10 h-10 border border-neutral-200 rounded-md flex items-center justify-center">
+                    class="w-10 h-10 border border-neutral-200 rounded-md flex items-center justify-center"
+                    aria-label="Abrir menu">
                     ☰
                 </button>
             </div>
 
         </div>
 
+        <!-- ================= MENU MOBILE ================= -->
+        <div id="mobile-menu"
+            class="hidden lg:hidden flex flex-col bg-white border-t border-neutral-200 px-6 py-4 space-y-4">
+
+            <a href="#cursos" class="text-black font-medium">Cursos</a>
+            <a href="#sobre" class="text-black font-medium">Sobre nós</a>
+            <a href="#alunos" class="text-black font-medium">Alunos</a>
+            <a href="#projetos" class="text-black font-medium">Projetos</a>
+            <a href="#estatisticas" class="text-black font-medium">Estatísticas</a>
+            <a href="#contato" class="text-black font-medium">Contato</a>
+
+        </div>
+
     </header>
 
-    <div class="h-20"></div>
-
+    <!-- ================= SCRIPT MENU MOBILE ================= -->
     <script>
-        const btn = document.getElementById("menu-btn");
-        const menu = document.getElementById("mobile-menu");
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
 
-        if (btn && menu) {
-            btn.addEventListener("click", () => {
-                menu.classList.toggle("hidden");
-            });
-        }
+        // Alterna visibilidade do menu mobile
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
     </script>
 
 </body>
