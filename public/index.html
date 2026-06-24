@@ -79,8 +79,9 @@
             menu.classList.toggle('hidden');
         });
     </script>
-
     <section id="inicio" class="relative min-h-screen flex flex-col justify-center pt-28 pb-12 px-8 overflow-hidden">
+
+        <!-- Glow -->
 
         <div
             class="absolute top-1/4 right-[-10%] w-[600px] h-[600px] bg-red-600/10 rounded-full blur-[140px] pointer-events-none z-0">
@@ -88,29 +89,32 @@
 
         <div class="max-w-[1400px] mx-auto w-full flex flex-col justify-between flex-1 z-10">
 
-            <div class="grid lg:grid-cols-12 gap-8 items-center my-auto w-full">
+            <div class="grid lg:grid-cols-12 gap-12 items-center my-auto w-full">
 
+                <!-- LADO ESQUERDO -->
                 <div class="lg:col-span-7 flex flex-col items-start">
 
                     <span
-                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-red-950/40 border border-red-900/40 text-[11px] font-bold tracking-widest text-[#E12E3C] uppercase mb-6 animate-pulse">
+                        class="inline-flex items-center px-4 py-1.5 rounded-full bg-red-950/40 border border-red-900/40 text-[11px] font-bold tracking-widest text-[#E12E3C] uppercase mb-6">
                         Aprenda. Pratique. Evolua.
                     </span>
 
-                    <h1
-                        class="text-5xl sm:text-6xl font-normal lg:text-md  font-black tracking-tight leading-[1.05] text-white">
-                        Transforme código em <br><span class="text-[#E12E3C]">oportunidades.</span>
+                    <h1 class="text-2xl sm:text-4xl lg:text-6xl font-black tracking-tight leading-[1.05] text-white">
+                        Transforme código em <br>
+                        <span class="text-[#E12E3C]">oportunidades.</span>
                     </h1>
 
-                    <p class="mt-6 text-lg text-neutral-400 max-w-xl leading-relaxed font-normal">
+                    <p class="mt-6 text-lg text-neutral-400 max-w-xl leading-relaxed">
                         Cursos de programação completos, projetos práticos e uma comunidade que te impulsiona do zero ao
                         mercado.
                     </p>
 
-                    <div class="mt-10 flex flex-wrap items-center gap-4 w-full sm:w-auto">
+                    <div class="mt-10 flex flex-wrap items-center gap-4">
+
                         <a href="#cursos"
-                            class="flex items-center justify-center gap-2 px-7 py-4 bg-[#E12E3C] hover:bg-[#c62431] text-white rounded-xl font-bold transition-all w-full sm:w-auto text-center text-base shadow-lg shadow-red-600/10">
+                            class="flex items-center justify-center gap-2 px-7 py-4 bg-[#E12E3C] hover:bg-[#c62431] text-white rounded-xl font-bold transition-all shadow-lg shadow-red-600/10">
                             Ver cursos
+
                             <svg class="w-4 h-4 stroke-[3]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3">
                                 </path>
@@ -118,37 +122,107 @@
                         </a>
 
                         <a href="#funcionamento"
-                            class="flex items-center justify-center gap-3 px-7 py-4 bg-[#0a0a0c] hover:bg-[#111115] border border-neutral-800/60 rounded-xl font-bold text-white transition w-full sm:w-auto text-center text-base">
+                            class="flex items-center justify-center gap-3 px-7 py-4 bg-[#0a0a0c] hover:bg-[#111115] border border-neutral-800 rounded-xl font-bold text-white transition">
                             Como funciona
                             <span class="text-[10px] text-neutral-400">▶</span>
                         </a>
+
                     </div>
+
+                </div>
+
+                <!-- LADO DIREITO -->
+                <div class="hidden lg:flex lg:col-span-5 justify-center">
+
+                    <div class="relative">
+
+                        <!-- Linha -->
+                        <div
+                            class="absolute left-1/2 top-12 bottom-12 -translate-x-1/2 w-px bg-gradient-to-b from-[#E12E3C] via-[#E12E3C]/50 to-transparent">
+                        </div>
+
+                        <div class="space-y-6">
+
+                            <div
+                                class="bg-[#0a0a0c] border border-neutral-800 rounded-2xl px-8 py-5 hover:border-[#E12E3C]/40 hover:-translate-y-1 transition-all duration-300">
+                                <p class="font-semibold text-white">HTML & CSS</p>
+                                <p class="text-xs text-neutral-500 mt-1">
+                                    Fundamentos da web
+                                </p>
+                            </div>
+
+                            <div
+                                class="ml-12 bg-[#0a0a0c] border border-neutral-800 rounded-2xl px-8 py-5 hover:border-[#E12E3C]/40 hover:-translate-y-1 transition-all duration-300">
+                                <p class="font-semibold text-white">JavaScript</p>
+                                <p class="text-xs text-neutral-500 mt-1">
+                                    Lógica e interatividade
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-[#0a0a0c] border border-neutral-800 rounded-2xl px-8 py-5 hover:border-[#E12E3C]/40 hover:-translate-y-1 transition-all duration-300">
+                                <p class="font-semibold text-white">React</p>
+                                <p class="text-xs text-neutral-500 mt-1">
+                                    Interfaces modernas
+                                </p>
+                            </div>
+
+                            <div
+                                class="ml-12 bg-[#0a0a0c] border border-neutral-800 rounded-2xl px-8 py-5 hover:border-[#E12E3C]/40 hover:-translate-y-1 transition-all duration-300">
+                                <p class="font-semibold text-white">Node.js</p>
+                                <p class="text-xs text-neutral-500 mt-1">
+                                    Backend e APIs
+                                </p>
+                            </div>
+
+                            <div
+                                class="bg-[#E12E3C] rounded-2xl px-8 py-5 shadow-xl shadow-red-600/20 hover:-translate-y-1 transition-all duration-300">
+                                <p class="font-bold text-lg text-white">
+                                    🚀 Primeira Vaga
+                                </p>
+
+                                <p class="text-sm text-white/80 mt-1">
+                                    Prepare-se para o mercado
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
 
-            <div class="w-full border-t border-neutral-900/60 pt-8 mt-auto flex items-center gap-4">
+            <!-- Rodapé Hero -->
+            <div class="w-full border-t border-neutral-900/60 pt-8 mt-16 flex items-center gap-4">
+
                 <div class="flex -space-x-2.5 overflow-hidden">
+
                     <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#030303] object-cover"
-                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80"
-                        alt="Aluno">
+                        src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80">
+
                     <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#030303] object-cover"
-                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
-                        alt="Aluno">
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80">
+
                     <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#030303] object-cover"
-                        src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=100&q=80"
-                        alt="Aluno">
+                        src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=100&q=80">
+
                     <div
                         class="flex items-center justify-center h-9 w-9 rounded-full bg-[#E12E3C] ring-2 ring-[#030303] text-[11px] font-bold text-white">
                         +1k
                     </div>
+
                 </div>
+
                 <p class="text-sm text-neutral-400 font-medium tracking-wide">
                     alunos já estão evoluindo com a gente
                 </p>
+
             </div>
 
         </div>
+
     </section>
     <section id="cursos" class="bg-[#030303] pt-20 pb-20 px-6 lg:px-8 border-t border-neutral-900/60">
         <div class="max-w-[1400px] mx-auto">
@@ -293,12 +367,12 @@
                 <div class="mt-8 flex flex-wrap gap-4">
 
                     <div class="bg-[#0a0a0c] border border-neutral-900 rounded-xl px-5 py-4">
-                        <p class="text-white font-bold text-xl">+10</p>
+                        <p class="text-white font-bold text-xl">+200</p>
                         <p class="text-neutral-400 text-xs mt-1">Projetos práticos</p>
                     </div>
 
                     <div class="bg-[#0a0a0c] border border-neutral-900 rounded-xl px-5 py-4">
-                        <p class="text-white font-bold text-xl">+100</p>
+                        <p class="text-white font-bold text-xl">+1000</p>
                         <p class="text-neutral-400 text-xs mt-1">Alunos ativos</p>
                     </div>
 
