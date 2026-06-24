@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atlas Web</title>
+    <title>Atlas</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/faveicon16px.png" type="image/x-icon">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -22,18 +23,16 @@
     <header class="fixed top-0 left-0 w-full bg-[#030303]/80 backdrop-blur-md border-b border-neutral-900 z-50 h-24">
         <div class="max-w-[1400px] mx-auto flex items-center justify-between h-full px-8">
 
-            <a href="/" class="flex items-center gap-3 group">
-                <!-- <svg class="h-6 w-auto text-[#E12E3C]" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5" />
-                    <path d="M12 2L2 7l10 5 10-5-10-5z" />
-                    <path d="M2 17l10 5 10-5" />
-                    <path d="M2 12l10 5 10-5" />
-                </svg> -->
-                <span class="text-xl font-black tracking-tight text-white flex items-center">
-                    Atlas
-                </span>
-            </a>
+            <div class=" flex flex-col">
+
+                <a href="/" class="flex items-center gap-3 group">
+                    <img src="img/faveicon96.png" alt="Logo Atlas" class="h-10 w-auto">
+
+                    <span class="text-xl font-black tracking-tight text-white flex items-center">
+                        Atlas
+                    </span>
+                </a>
+            </div>
 
             <nav class="hidden lg:flex items-center gap-10 text-[15px] font-medium text-neutral-400">
                 <a href="#cursos" class="hover:text-white transition-colors">Cursos</a>
@@ -72,14 +71,14 @@
         </div>
     </header>
 
-            <script>
-                const btn = document.getElementById('menu-btn');
-                const menu = document.getElementById('mobile-menu');
-        
-                btn.addEventListener('click', () => {
-                    menu.classList.toggle('hidden');
-                });
-            </script>
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
 
     <section id="inicio" class="relative min-h-screen flex flex-col justify-center pt-28 pb-12 px-8 overflow-hidden">
 
@@ -126,14 +125,6 @@
                     </div>
                 </div>
 
-                <!-- <div class="lg:col-span-5 flex justify-center lg:justify-end w-full mt-10 lg:mt-0">
-                    <div class="relative w-full max-w-[680px] lg:max-w-none flex items-center justify-center">
-                        <img src="img/ChatGPT Image 22 de jun. de 2026, 18_38_57.png"
-                            class="w-full h-auto object-contain relative z-10 drop-shadow-[0_35px_50px_rgba(0,0,0,0.9)] scale-105 lg:scale-110"
-                            alt="Plataforma Atlas Web">
-                    </div>
-                </div> -->
-
             </div>
 
             <div class="w-full border-t border-neutral-900/60 pt-8 mt-auto flex items-center gap-4">
@@ -144,7 +135,7 @@
                     <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#030303] object-cover"
                         src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80"
                         alt="Aluno">
-                        <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#030303] object-cover"
+                    <img class="inline-block h-9 w-9 rounded-full ring-2 ring-[#030303] object-cover"
                         src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=100&q=80"
                         alt="Aluno">
                     <div
@@ -269,192 +260,274 @@
 
         </div>
     </section>
-    
-  <!-- PROJETOS DOS ALUNOS -->
-<div class="max-w-7xl mx-auto px-6">
 
-    <h2 class="text-4xl font-bold mb-14 text-white">
-        Projetos dos Alunos
-    </h2>
+    <!-- SOBRE NÓS -->
+    <section id="sobre" class="bg-[#030303] py-24 border-t border-neutral-900/60">
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="max-w-[1400px] mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
 
-        <!-- Card 1 -->
-        <div class="bg-gray-950 rounded-2xl shadow-lg overflow-hidden">
+            <!-- TEXTO -->
+            <div>
 
-            <img src="img/bibloteca_virtual.jfif" class="w-full h-52 object-cover">
+                <span
+                    class="inline-flex items-center px-4 py-1.5 rounded-full bg-red-950/40 border border-red-900/40 text-[11px] font-bold tracking-widest text-[#E12E3C] uppercase mb-6 animate-pulse">
+                    Quem somos nós?
+                </span>
 
-            <div class="p-6">
+                <h2 class="text-4xl sm:text-5xl font-black text-white mt-4 leading-tight">
+                    Uma plataforma criada para formar
+                    <span class="text-[#E12E3C]">desenvolvedores reais.</span>
+                </h2>
 
-                <h3 class="text-white text-xl font-semibold">
-                    Sistema de Biblioteca
-                </h3>
-
-                <p class="text-white mt-2">
-                    João Silva
+                <p class="mt-6 text-neutral-400 text-lg leading-relaxed">
+                    A Atlas é uma plataforma de ensino de programação focada em formar desenvolvedores através da
+                    prática, com projetos reais e trilhas organizadas de aprendizado.
                 </p>
 
-                <p class="mt-4 text-sm text-gray-100">
-                    HTML • CSS • JavaScript
+                <p class="mt-4 text-neutral-500 text-base leading-relaxed">
+                    O objetivo é simular uma experiência próxima ao mercado, onde o aluno aprende construindo, testando
+                    e evoluindo suas habilidades na prática.
                 </p>
 
-                <button class="mt-6 bg-[#FF2D55] text-white px-5 py-3 rounded-xl hover:bg-pink-700 transition">
-                    Ver detalhes
-                </button>
+                <!-- NÚMEROS -->
+                <div class="mt-8 flex flex-wrap gap-4">
 
-            </div>
+                    <div class="bg-[#0a0a0c] border border-neutral-900 rounded-xl px-5 py-4">
+                        <p class="text-white font-bold text-xl">+10</p>
+                        <p class="text-neutral-400 text-xs mt-1">Projetos práticos</p>
+                    </div>
 
-        </div>
+                    <div class="bg-[#0a0a0c] border border-neutral-900 rounded-xl px-5 py-4">
+                        <p class="text-white font-bold text-xl">+100</p>
+                        <p class="text-neutral-400 text-xs mt-1">Alunos ativos</p>
+                    </div>
 
-        <!-- Card 2 -->
-        <div class="bg-gray-950 rounded-2xl shadow-lg overflow-hidden">
+                    <div class="bg-[#0a0a0c] border border-neutral-900 rounded-xl px-5 py-4">
+                        <p class="text-white font-bold text-xl">100%</p>
+                        <p class="text-neutral-400 text-xs mt-1">Foco prático</p>
+                    </div>
 
-            <img src="img/loja_virtual.jfif" class="w-full h-52 object-cover">
-
-            <div class="p-6">
-
-                <h3 class="text-white text-xl font-semibold">
-                    Loja Virtual
-                </h3>
-
-                <p class="text-gray-100 mt-2">
-                    Maria Souza
-                </p>
-
-                <p class="mt-4 text-sm text-gray-100">
-                    React • Node.js
-                </p>
-
-                <button class="mt-6 bg-[#FF2D55] text-white px-5 py-3 rounded-xl hover:bg-pink-700 transition">
-                    Ver detalhes
-                </button>
-
-            </div>
-
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-gray-950 rounded-2xl shadow-lg overflow-hidden">
-
-            <img src="img/agenda_virtual2.jfif" class="w-full h-52 object-cover">
-
-            <div class="p-6">
-
-                <h3 class="text-white text-xl font-semibold">
-                    Agenda Escolar
-                </h3>
-
-                <p class="text-gray-100 mt-2">
-                    Pedro Oliveira
-                </p>
-
-                <p class="mt-4 text-sm text-gray-100">
-                    Python • Flask
-                </p>
-
-                <button class="mt-6 bg-[#FF2D55] text-white px-5 py-3 rounded-xl hover:bg-pink-700 transition">
-                    Ver detalhes
-                </button>
-
-            </div>
-
-        </div>
-
-    </div>
-</div>
-
-<!-- EMPRESAS PARCEIRAS -->
-<section class="mt-20">
-
-    <h2 class="text-white text-4xl font-bold text-center mb-16">
-        Empresas Parceiras
-    </h2>
-
-    <div class="flex flex-wrap justify-center gap-12">
-
-        <div class="flex items-center gap-3">
-            <img src="img/google.png" class="h-10 w-10">
-            <span class="text-white text-xl font-semibold">Google</span>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img src="img/microsoft.png" class="h-10 w-10">
-            <span class="text-white text-xl font-semibold">Microsoft</span>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img src="img/amazon.jfif" class="h-10 w-10">
-            <span class="text-white text-xl font-semibold">Amazon</span>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img src="img/oracle.png" class="h-10 w-10">
-            <span class="text-white text-xl font-semibold">Oracle</span>
-        </div>
-
-        <div class="flex items-center gap-3">
-            <img src="img/intel.png" class="h-10 w-10">
-            <span class="text-white text-xl font-semibold">Intel</span>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- CONTATO -->
-<section id="contato" class="mt-20 pb-20">
-
-    <div class="flex flex-col lg:flex-row justify-between gap-16 px-6 max-w-7xl mx-auto">
-
-        <!-- Informações -->
-        <div>
-
-            <h2 class="text-4xl font-bold mb-10 text-white">
-                Entre em contato
-            </h2>
-
-            <div class="space-y-6 text-gray-300">
-
-                <div>
-                    <h3 class="font-semibold text-white mb-2">E-mail</h3>
-                    <p>contato@Atlas</p>
                 </div>
 
-                <div>
-                    <h3 class="font-semibold text-white mb-2">Telefone</h3>
-                    <p>(11) 67676-6767</p>
-                </div>
+            </div>
 
-                <div>
-                    <h3 class="font-semibold text-white mb-2">Endereço</h3>
-                    <p>São Paulo - SP</p>
+            <!-- COMO FUNCIONA -->
+            <div class="bg-[#0a0a0c] border border-neutral-900 rounded-xl p-6">
+
+                <h3 class="text-white font-semibold mb-5">Como funciona a Atlas</h3>
+
+                <div class="space-y-4 text-sm text-neutral-400">
+
+                    <div class="flex gap-3">
+                        <span class="text-[#E12E3C] font-bold">1.</span>
+                        <p>Você escolhe um curso e começa do básico.</p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <span class="text-[#E12E3C] font-bold">2.</span>
+                        <p>Aprende com aulas diretas e exercícios práticos.</p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <span class="text-[#E12E3C] font-bold">3.</span>
+                        <p>Constrói pequenos projetos para fixar o conteúdo.</p>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <span class="text-[#E12E3C] font-bold">4.</span>
+                        <p>Evolui até conseguir criar aplicações completas sozinho.</p>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-        <!-- Formulário -->
-        <form class="space-y-5 w-full max-w-md">
+    </section>
 
-            <input type="text" placeholder="Nome"
-                class="w-full p-4 rounded-xl text-black outline-none">
+    <!-- PROJETOS DOS ALUNOS -->
+    <div id="projetos" class="max-w-7xl mx-auto px-6">
 
-            <input type="email" placeholder="E-mail"
-                class="w-full p-4 rounded-xl text-black outline-none">
+        <h2 class="text-4xl font-bold mb-14 text-white">
+            Projetos dos Alunos
+        </h2>
 
-            <input type="text" placeholder="Assunto"
-                class="w-full p-4 rounded-xl text-black outline-none">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <textarea rows="6" placeholder="Mensagem"
-                class="w-full p-4 rounded-xl text-black outline-none"></textarea>
+            <!-- Card 1 -->
+            <div class="bg-gray-950 rounded-2xl shadow-lg overflow-hidden">
 
-            <button class="bg-[#FF2D55] px-8 py-4 rounded-xl font-semibold hover:bg-pink-700 transition">
-                Enviar mensagem
-            </button>
+                <img src="img/bibloteca_virtual.jfif" class="w-full h-52 object-cover">
 
-        </form>
+                <div class="p-6">
 
+                    <h3 class="text-white text-xl font-semibold">
+                        Sistema de Biblioteca
+                    </h3>
+
+                    <p class="text-white mt-2">
+                        João Silva
+                    </p>
+
+                    <p class="mt-4 text-sm text-gray-100">
+                        HTML • CSS • JavaScript
+                    </p>
+
+                    <button class="mt-6 bg-[#FF2D55] text-white px-5 py-3 rounded-xl hover:bg-pink-700 transition">
+                        Ver detalhes
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-gray-950 rounded-2xl shadow-lg overflow-hidden">
+
+                <img src="img/loja_virtual.jfif" class="w-full h-52 object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-white text-xl font-semibold">
+                        Loja Virtual
+                    </h3>
+
+                    <p class="text-gray-100 mt-2">
+                        Maria Souza
+                    </p>
+
+                    <p class="mt-4 text-sm text-gray-100">
+                        React • Node.js
+                    </p>
+
+                    <button class="mt-6 bg-[#FF2D55] text-white px-5 py-3 rounded-xl hover:bg-pink-700 transition">
+                        Ver detalhes
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-gray-950 rounded-2xl shadow-lg overflow-hidden">
+
+                <img src="img/agenda_virtual2.jfif" class="w-full h-52 object-cover">
+
+                <div class="p-6">
+
+                    <h3 class="text-white text-xl font-semibold">
+                        Agenda Escolar
+                    </h3>
+
+                    <p class="text-gray-100 mt-2">
+                        Pedro Oliveira
+                    </p>
+
+                    <p class="mt-4 text-sm text-gray-100">
+                        Python • Flask
+                    </p>
+
+                    <button class="mt-6 bg-[#FF2D55] text-white px-5 py-3 rounded-xl hover:bg-pink-700 transition">
+                        Ver detalhes
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
-</section>
+    <!-- EMPRESAS PARCEIRAS -->
+    <section class="mt-20">
+
+        <h2 class="text-white text-4xl font-bold text-center mb-16">
+            Empresas Parceiras
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-12">
+
+            <div class="flex items-center gap-3">
+                <img src="img/google.png" class="h-10 w-10">
+                <span class="text-white text-xl font-semibold">Google</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <img src="img/microsoft.png" class="h-10 w-10">
+                <span class="text-white text-xl font-semibold">Microsoft</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <img src="img/amazon.jfif" class="h-10 w-10">
+                <span class="text-white text-xl font-semibold">Amazon</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <img src="img/oracle.png" class="h-10 w-10">
+                <span class="text-white text-xl font-semibold">Oracle</span>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <img src="img/intel.png" class="h-10 w-10">
+                <span class="text-white text-xl font-semibold">Intel</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="mt-20 pb-20">
+
+        <div class="flex flex-col lg:flex-row justify-between gap-16 px-6 max-w-7xl mx-auto">
+
+            <!-- Informações -->
+            <div>
+
+                <h2 class="text-4xl font-bold mb-10 text-white">
+                    Entre em contato
+                </h2>
+
+                <div class="space-y-6 text-gray-300">
+
+                    <div>
+                        <h3 class="font-semibold text-white mb-2">E-mail</h3>
+                        <p>contato@Atlas</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-white mb-2">Telefone</h3>
+                        <p>(11) 8002-8922</p>
+                    </div>
+
+                    <div>
+                        <h3 class="font-semibold text-white mb-2">Endereço</h3>
+                        <p>São Paulo - SP</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Formulário -->
+            <form class="space-y-5 w-full max-w-md">
+
+                <input type="text" placeholder="Nome" class="w-full p-4 rounded-xl text-black outline-none">
+
+                <input type="email" placeholder="E-mail" class="w-full p-4 rounded-xl text-black outline-none">
+
+                <input type="text" placeholder="Assunto" class="w-full p-4 rounded-xl text-black outline-none">
+
+                <textarea rows="6" placeholder="Mensagem"
+                    class="w-full p-4 rounded-xl text-black outline-none"></textarea>
+
+                <button class="bg-[#FF2D55] px-8 py-4 rounded-xl font-semibold hover:bg-pink-700 transition">
+                    Enviar mensagem
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
